@@ -1,0 +1,60 @@
+{% extends 'base_layout.html' %}
+
+{% block content%}
+
+    <div class="my-reservations-panel">
+
+        <table class="table table-bordered">
+            <thead class="thead">
+                <tr>
+                    <th colspan="100%"><h2>My Reservations</h2></th>
+                </tr>
+                <tr>
+                    <th scope="col">Class</th>
+                    <th scope="col">Start Time</th>
+                    <th scope="col">End Time</th>
+                    <th scope="col">Day Of Week</th>
+                    <th scope="col">Class Date</th>
+                    <th scope="col">Reservation Made On</th>
+                    <th scope="col">Current Status</th>
+                    <th scope="col"></th>                    
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr>
+                    {% if reservations %}
+                        {% for i in reservations %}
+                            {% with forloop.counter0 as outer_counter %}
+                            <tr>
+                                <td>{{i.classReserved.className}}</td>
+                                <td>{{i.classReserved.startTime}}</td>
+                                <td>{{i.classReserved.endTime}}</td>
+                                <td>{{i.classReserved.dayOfWeek}}</td>
+                                <td>{{i.classDate}}</td>
+                                <td>{{i.reservationTimeStamp}}</td>
+                                <td>{{i.reservationStatus}}</td>
+                                <td>
+                                    <form class=cancel-form action="{% url 'reservations:myReservations' %}" method="post">
+                                        {% csrf_token %}
+                                        <input name="reservationId" type="hidden" value="{{i.id}}"></input>
+                                        <input type="submit" value="Cancel"></input>
+                                    </form> 
+                                </td>  
+                            </tr>
+                            {% endwith %}
+                        {% endfor %}
+                    {% else %}
+                    <tr>
+                        <td colspan="100%">No Reservations Made</td>  
+                    </tr>
+                    {% endif %} 
+                </tr>
+                <tr>
+                    <td colspan="100%"><input type="button" value="Go Back . . ." onclick="history.back()">
+                    </td>
+                </tr>                  
+            </tbody>           
+        </table>
+    </div>
+  
+{% endblock %}

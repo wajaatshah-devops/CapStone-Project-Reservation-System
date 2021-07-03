@@ -1,0 +1,453 @@
+@charset "utf-8";
+/* CSS Document */
+
+title h1{
+	font-style: italic;
+}
+
+.main-block {
+  max-width: 100%;
+  height: 100%;  
+  margin: 3% auto;
+}
+
+.login-panel h1{
+  padding-top: 5%;
+}
+
+.site-form {
+    margin: 0 auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.site-form input, .site-form textarea{
+    display: block;
+    margin: 20px 0 0px 0;
+    padding: 10px;
+}
+
+.availabilityTable table, tr, th{
+border: 1px solid black;
+border-radius:6px;
+}
+
+.availabilityTable caption{
+font-size: 20px;
+font-weight: bold;
+}
+
+.schedule-statement{
+	text-align: center;
+}
+
+.btn{
+	margin-left:10px;
+}
+
+#navButtons li{
+  margin: 2% auto auto ;
+}
+
+.thead{
+	background-color:  #005C9A;
+	text-align: center;
+}
+
+.thead th{
+	color: white;
+}
+
+.tbody{
+	text-align: center;
+}
+
+
+
+.centered-button{
+	padding-left:21%;
+}
+
+.signup-panel{
+    display: flex;
+    margin: 2% 2% 2% 2%;
+}
+
+.create-button{
+	margin: 3% 2% 3% 2%;
+}
+
+#footer{
+  margin: 3% auto auto auto;
+}
+
+/* Reserve.html*/
+
+.reserve{
+	display: flex;
+	border: 1px solid black;
+	width: 85%;
+	margin: auto;
+}
+.flex-child{
+	margin: 2% 2% 2%;
+}
+.flex-child:first-child {
+    margin-left: 15%;
+}
+.flex-child:nth-child(2){
+	margin-right: 15%;
+}
+
+#reserve-form{
+    padding-bottom: 5%
+}
+
+#reserve-form h2,h3, h4, h5, h6{
+	padding-bottom: 5%
+}
+
+#availability-table{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+#availability-table th{
+	color: black;
+	padding: 1%
+}
+#availability-table td{
+	color: red;
+	font-size: 30px;
+}
+#duplicate-message{
+	color: red;
+}
+
+/* staffReservation.html css*/
+
+.table-holder{
+	text-align:center;
+}
+.table-holder th{
+	background-color: #005C9A;
+	color: white
+
+}
+
+/* submission.html */
+
+.submission-holder{
+	text-align:center;
+}
+
+.submission-holder th{
+    background-color:  #005C9A;
+    color: white;
+}
+
+.banner {
+	width: 100%;
+	height: auto;	
+}
+.imgmax{
+	width: 100%;
+	height: auto;
+	display:block;
+	margin: 0 auto;
+}
+
+.bg-logo{
+	background-color: #005C9A;
+	color: #fff!important;
+}
+
+.logo{
+	max-width: 350px;
+	background-color: #005C9A;
+}
+.logotext{
+	color: #fff!important;
+	margin-left: 5px;
+}
+.menutext{
+	color: #fff!important;
+}
+
+.navbutton{
+	border-color: black;
+	background-color: #900028;
+	font-weight: bold;
+	color: #fff;
+	
+}
+
+.loginbtn{
+	border-color: black !important;
+	background-color: #900028 !important;
+	font-weight: bold !important;
+	color: #fff !important;
+	margin-right: 5px;
+	
+}
+
+.loginpg-btn:hover {
+	background-color: #5a031c !important;
+	color: rgb(239, 240, 205) !important;
+	transition-duration: 0.4s;
+}
+
+.signupbtn{
+	border-color: black;
+	background-color: #900028 !important;
+	font-weight: bold;
+	color: #fff;
+	
+}
+.vidtitle{
+	padding-bottom:0%;
+}
+
+
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+	margin-bottom: 5%;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+
+.loginpg-btn{
+	border-color: black !important;
+	background-color: #900028 !important;
+	font-weight: bold !important;
+	color: #fff !important;
+}
+
+#credits {
+	margin: 5% auto;
+	position: absolute;
+	bottom: auto;
+	width: 100%;
+}
+
+.formbox1{
+	border: 1px solid black;
+	padding-top: 15px;
+	margin-left: 20%;
+}
+
+.left-halfpage{
+	padding-left: 18%;
+	border-right: 1px solid rgb(192, 192, 192);
+}
+
+.right-halfpage{
+	padding-top: 2%;
+	padding-left: 5%;
+}
+
+.right-halfpage-field{
+	margin-bottom:10px;
+}
+
+/*New Cust Reserve Page*/
+.conf-res-info{
+	margin-left: 33%;
+}
+
+.av-class-name{
+	font-weight: bold;
+	font-size: 1.5rem;
+}
+
+.av-class-instructor-name{
+	font-weight: bold;
+	font-size: 1.25rem;	
+}
+.av-class-start-end{
+	font-weight: bold;
+	font-size: 1rem;	
+}
+.av-class-today{
+	font-weight: bold;
+	font-size: 1rem;	
+}
+
+.av-error-msg{
+	padding-right: 300px;
+	color: red; 
+}
+
+.conf-res-available-border{
+	border: 1px solid #900028;
+	margin-left: -25%;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/fall1.jpg');
+	/*background-image: url("../images/fall1.jpg");*/
+	background-size: cover;
+	border-radius: 25px;
+}
+
+.conf-res-available{
+	margin-top: 25%;
+	font-weight: bold;
+	color: #fff;	
+	
+}
+
+.conf-res-available-date{
+	font-size: 1.05rem;
+}
+
+.conf-res-number{
+	font-size: 5.5rem;
+	text-align: center;
+}
+
+.signup-form{
+	max-width: 100%;
+	border: 1px solid black;
+	padding: 3%
+}
+
+.signup-full{
+	padding-left: 20% !important;
+}
+
+/*End New Cust Reserve Page*/
+
+/*Mobile Styling Start*/
+
+@media only screen and (max-width: 575px) {
+
+	/*Mobile Sign Up Page*/
+	.right-halfpage{
+	padding-left: 18%;
+  }
+
+  .left-halfpage{
+	padding-left: 18%;
+	
+	}
+
+	.centered-button{
+	padding-left:21%;
+	}
+
+	.formbox1{
+	border-bottom: 1px solid black;
+	padding-bottom: 20px;
+	}
+
+	.schedule{
+		overflow:scroll;
+	}
+
+	/*End Mobile Sign Up Page*/
+
+	/*New Cust Reserve Page*/
+	.conf-res-info{
+		margin-left: 20%;
+		margin-bottom: 15px;
+	}
+
+	.conf-res-available-border{
+	border: none;
+	margin-left: 5%;
+	margin-right: 5%;
+	padding-left: 0%;
+	background: none;
+	}
+
+	.conf-res-available{
+	margin-top: 0%;
+	font-weight: bold;
+	color: #900028;	
+	}
+
+	.conf-res-number{
+	font-size: 5.5rem;
+	text-align: center;
+	}
+
+	.conf-res-available-date{
+	font-size: 1.05rem;
+	text-align: center;
+	}
+
+	.av-error-msg{
+		padding-right: 0px;
+		color: red; 
+	}
+
+	/*End New Cust Reserve Page*/
+
+}
+
+/*Mobile Styling End*/
+
+
+/*Med Tablet Styling Start*/
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+	/*.conf-res-available-border{
+		border: 1px solid #900028;
+		margin-left: -15%;
+		background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../images/fall1.jpg');
+		
+		background-size: cover;
+		border-radius: 25px;
+	}
+
+	.conf-res-info{
+		margin-left: 25%;
+		margin-bottom: 15px;
+	}*/
+
+	.conf-res-info{
+		margin-left: 40%;
+		margin-bottom: 15px;
+	}
+
+	.conf-res-available-border{
+	border: none;
+	margin-left: 40%;
+	margin-right: 5%;
+	padding-left: 0%;
+	background: none;
+	}
+
+	.conf-res-available{
+	margin-top: 0%;
+	font-weight: bold;
+	color: #900028;	
+	}
+
+	.conf-res-number{
+	font-size: 5.5rem;
+	text-align: center;
+	}
+
+	.conf-res-available-date{
+	font-size: 1.05rem;
+	text-align: center;
+	}
+
+	.av-error-msg{
+		padding-right: 0px;
+		color: red; 
+	}
+
+}
+
+
+
+
+/*Med Tablet Styling Start*/
